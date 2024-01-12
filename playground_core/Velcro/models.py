@@ -35,6 +35,10 @@ class Testhistory(models.Model):
     topic = models.CharField(max_length=80)
     score = models.IntegerField()
 
+    def __str__(self):
+        return self.topic
+
+
 
 
     
